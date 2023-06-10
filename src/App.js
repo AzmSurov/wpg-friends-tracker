@@ -9,7 +9,6 @@ import avatar3 from "./images/avatar-3.png"
 import avatar4 from "./images/avatar-4.png"
 import avatar5 from "./images/avatar-5.png"
 import avatar6 from "./images/avatar-6.png"
-import avatar7 from "./images/avatar-1.png"
 import {AiOutlineFilter} from 'react-icons/ai'
 const Highest = () => toast('Winner Winner Chicken Dinner!', {
   icon: '👏',
@@ -72,7 +71,7 @@ function App() {
     },
     {
       id:6,
-    avatar: avatar1,
+    avatar: avatar3,
     name: "Swrov",
     total: 0,
     status: "Last",
