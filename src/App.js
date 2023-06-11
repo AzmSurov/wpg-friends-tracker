@@ -58,7 +58,7 @@ function App() {
       avatar: avatar4,
       name: "Nishi",
       total: 2,
-      status: "Second",
+      status: "Third",
       toasty: second
     },
     {
@@ -74,7 +74,7 @@ function App() {
     avatar: avatar3,
     name: "Swrov",
     total: 2,
-    status: "Last",
+    status: "Third",
     toasty : last
   },
   {
@@ -107,8 +107,9 @@ function App() {
         <div class="p-6 bg-gray-900 rounded-lg">
     <div class="flex justify-between items-center pb-4">
       <div>
-      <h2 class="text-xl font-semibold leading-loose text-white">Game Stats <span className='text-sm text-gray-500'>- Recorded since June 10th 2023</span></h2>
-      <p class="text-xs font-semibold leading-loose text-gray-600">Last Update: June 10th 2023</p>
+      <h2 class="text-xl font-semibold leading-loose text-white">Game Stats </h2>
+      <span className='text-sm text-gray-500'> <span className='underline'>Started</span> : June 3rd 2023</span>
+      <p class="text-xs font-semibold leading-loose text-gray-600">Last Update: June 11th 2023</p>
       </div>
       <button class="flex py-3 px-4 rounded-lg border border-gray-700 gap-x-2.5 text-white">
         <AiOutlineFilter className='' size={20}/>
@@ -137,7 +138,7 @@ function App() {
               <td class="py-4 tabular-nums text-center">{total}</td>
               <td class="py-4 flex justify-center pl-2">
                 <span
-                  class={"flex justify-center py-1 w-24 font-medium capitalize rounded-full " + (status === "Top G" ? "bg-[#50D1AA]/20 text-[#50D1AA]" : "") + (status === "Second" ? "bg-[#9290FE]/20 text-[#9290FE]" : "") + (status === "Bottom G" ? "bg-[#ff7b72]/20 text-[#ff7b72]" : "") + (status === "💩💩💩💩" ? "bg-[#964B00]/20 text-[#964B00]" : "")}
+                  class={"flex justify-center py-1 w-24 font-medium capitalize rounded-full " + (status === "Top G" ? "bg-[#50D1AA]/20 text-[#50D1AA]" : "") + (status === "Second" ? "bg-[#9290FE]/20 text-[#9290FE]" : "") + (status === "Third" ? "bg-[#9290FE]/20 text-[#9290FE]" : "") + (status === "Bottom G" ? "bg-[#ff7b72]/20 text-[#ff7b72]" : "") + (status === "💩💩💩💩" ? "bg-[#964B00]/20 text-[#964B00]" : "")}
                 >
                   {status}
                 </span>
