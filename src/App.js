@@ -33,24 +33,24 @@ function App() {
         id:1,
       avatar: avatar2,
       name: "Tizzi",
-      total: 3,
-      status: "Highest",
+      total: 4,
+      status: "Top G",
       toasty: Highest
     },
     {
         id:2,
       avatar: avatar1,
       name: "KingKar",
-      total: 2,
-      status: "Second",
-      toasty: second
+      total: 4,
+      status: "Top G",
+      toasty: Highest
     },
     {
         id:3,
       avatar: avatar6,
       name: "Kabbo",
-      total: 0,
-      status: "Last",
+      total: 1,
+      status: "Bottom G",
       toasty : last
     },
     {
@@ -66,14 +66,14 @@ function App() {
       avatar: avatar6,
       name: "Imtiaz",
       total: 1,
-      status: "💩💩💩💩",
+      status: "Bottom G",
       toasty: poop
     },
     {
       id:6,
     avatar: avatar3,
     name: "Swrov",
-    total: 0,
+    total: 2,
     status: "Last",
     toasty : last
   },
@@ -81,8 +81,17 @@ function App() {
     id:7,
     avatar: avatar5,
     name: "Neon",
-    total: 2,
+    total: 3,
     status: "Second",
+    toasty: second
+    
+  },
+  {
+    id:8,
+    avatar: avatar5,
+    name: "Bodo",
+    total: 1,
+    status: "Bottom G",
     toasty: second
     
   }
@@ -97,7 +106,10 @@ function App() {
      <div>
         <div class="p-6 bg-gray-900 rounded-lg">
     <div class="flex justify-between items-center pb-4">
-      <h2 class="text-xl font-semibold leading-loose text-white">Game Stats</h2>
+      <div>
+      <h2 class="text-xl font-semibold leading-loose text-white">Game Stats <span className='text-sm text-gray-500'>- Recorded since June 10th 2023</span></h2>
+      <p class="text-xs font-semibold leading-loose text-gray-600">Last Update: June 10th 2023</p>
+      </div>
       <button class="flex py-3 px-4 rounded-lg border border-gray-700 gap-x-2.5 text-white">
         <AiOutlineFilter className='' size={20}/>
         <span class="text-sm">UNO</span>
@@ -125,7 +137,7 @@ function App() {
               <td class="py-4 tabular-nums text-center">{total}</td>
               <td class="py-4 flex justify-center pl-2">
                 <span
-                  class={"flex justify-center py-1 w-24 font-medium capitalize rounded-full " + (status === "Highest" ? "bg-[#50D1AA]/20 text-[#50D1AA]" : "") + (status === "Second" ? "bg-[#9290FE]/20 text-[#9290FE]" : "") + (status === "Last" ? "bg-[#ff7b72]/20 text-[#ff7b72]" : "") + (status === "💩💩💩💩" ? "bg-[#964B00]/20 text-[#964B00]" : "")}
+                  class={"flex justify-center py-1 w-24 font-medium capitalize rounded-full " + (status === "Top G" ? "bg-[#50D1AA]/20 text-[#50D1AA]" : "") + (status === "Second" ? "bg-[#9290FE]/20 text-[#9290FE]" : "") + (status === "Bottom G" ? "bg-[#ff7b72]/20 text-[#ff7b72]" : "") + (status === "💩💩💩💩" ? "bg-[#964B00]/20 text-[#964B00]" : "")}
                 >
                   {status}
                 </span>
